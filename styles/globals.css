@@ -134,9 +134,15 @@ body {
   border-image-slice: 1;
   border-image-repeat: round;
 }
+
+
 /* .hideScrollBarTestimonial__SliderWrapper::-webkit-scrollbar {
   display: none;
 }
 .hideScrollBarTestimonial__SliderWrapper {
   scrollbar-width: none;
 } */
+
+.mainFooter__BgColor{
+  background: linear-gradient(180deg, #E90029 0%, #9F0000 100%);
+}
