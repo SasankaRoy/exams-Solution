@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -34,6 +40,10 @@ body {
   }
 } */
 
+/* body {
+  background: #1c1c1c;
+} */
+
 .searchInputWrapper {
   background: rgba(255, 255, 255, 0.2);
 }
@@ -52,11 +62,17 @@ body {
 .circelBgColor {
   /* background: linear-gradient(180deg, #e90029 0%, #9f0000 100%); */
   background: #e90029;
-  opacity: 0.4;
+  opacity: 0.5;
   filter: blur(170.39999389648438px);
 }
 .textBgColor {
   background: linear-gradient(90deg, #ffb6b6 0%, #e70f35 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.textBgColorTestimonial {
+  background: linear-gradient(183deg, #ff7474 65.23%, #e90029 97.46%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -81,17 +97,46 @@ body {
   transform: rotateZ(10deg);
 }
 .borderBgColor {
-  position: relative;
-  z-index: 10;
-  background-color: #1c1c1c;
+  border: 1.5px solid transparent;
+  border-radius: 16px;
+  border-image: linear-gradient(
+    90deg,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-image-slice: 1;
+  border-image-repeat: round;
 }
-.borderBgColor::after{
-  position:absolute;
-  content: ''; 
-  top: -4px;
-  left: -4px;
-  height: 102%;
-  width: 102%;
-  background:linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(255,255,255,1) 100%);
-  z-index: 0;
+
+.categorBTNBg {
+  background: linear-gradient(90deg, #343434 0%, #131313 100%);
 }
+.faqMainWrapper {
+  box-shadow: 0px 0px 13.7px 0px rgba(255, 255, 255, 0.25);
+}
+
+.testimonialClient__reviewBg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(0, 0, 0, 0.02) 100%
+  );
+}
+
+.headingBottomBorder {
+  border-bottom: 1.5px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 50.5%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-image-slice: 1;
+  border-image-repeat: round;
+}
+/* .hideScrollBarTestimonial__SliderWrapper::-webkit-scrollbar {
+  display: none;
+}
+.hideScrollBarTestimonial__SliderWrapper {
+  scrollbar-width: none;
+} */

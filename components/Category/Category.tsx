@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 export const Category = () => {
   return (
-    <div className="h-[85vh] bg-[#1C1C1C]">
-      <div className="w-full flex justify-center items-center flex-col gap-4">
+    <div className="h-[125vh] flex flex-col justify-evenly items-center w-full relative bg-[#1C1C1C]">
+      <div className="w-full flex justify-center items-center flex-col gap-4 py-3">
         <h2 className="text-[#FFF] font-[Bakbak One] font-[600] text-5xl">
           Category
         </h2>
@@ -11,21 +12,313 @@ export const Category = () => {
           List of all the exam solutions available for you to access
         </p>
       </div>
-      <div className="relative top-0 left-0 w-full h-[86%]">
-        <div className="bg-red-200 absolute w-[20%] h-[25%] top-[30%] left-[40%] circelBgColor  rounded-full" />
+      <img
+        src="/categoryBg1.png"
+        className="absolute top-0 left-0 h-full"
+        alt="category-bg-1"
+      />
+      <img
+        src="/categoryBg1.png"
+        className="absolute top-0 right-0 h-full"
+        alt="category-bg-1"
+      />
+
+      <div className="relative top-0 left-0 w-full h-[70%] ">
+        <div className="absolute w-[30%] h-[35%] top-[30%] left-[37%] circelBgColor  rounded-full" />
         <div className="absolute w-full h-full top-0 left-0">
-            <div className="w-[90%] h-full grid grid-cols-4 mx-auto">
-                <div className="borderBgColor w-full h-full">
-                    <div className="w-full h-full absolute top-0 left-0 z-10">jfdjffh</div>
+          <div className="w-[90%] h-full grid grid-cols-4 gap-5 mx-auto">
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category1.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
                 </div>
-                <div>dfgfdgdfd</div>
-                <div>gsdfgsdfsdf</div>
-                <div>fdgsfdsdg</div>
-                <div>dfgdfgrtgrt</div>
-                <div>dgdsfgfd</div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Sample
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0  justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
+
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category2.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Basic Exam
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0  justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category3.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Mechanical Engineering
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0 justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category4.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Manufacturing Engineering
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0 justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category4.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Industrial Engineering
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0 justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category5.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Electrical Engineering
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0 justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category6.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Civil Engineering
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0 justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-xl">
+              <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
+                <div className="w-[90%] h-[60%] relative  mx-auto ">
+                  <Image
+                    fill
+                    loading="lazy"
+                    src="/Category7.png"
+                    alt="category-pic"
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="flex justify-between w-[85%] h-[20%] items-center">
+                  <h2 className="text-2xl font-[600] font-[Bakbak One] text-[#FFF]">
+                    Solid Works
+                  </h2>
+                  <button className="categorBTNBg w-[15%] flex flex-shrink-0 justify-center items-center py-3 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="14"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                    >
+                      <path
+                        d="M17 7L11 1M17 7L11 13M17 7L6.5 7M1 7H3.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <button className="getStartedBtn w-[8%] mt-3 text-[#FFF] font-[Bakbak One] font-[500] py-2 text-lg">View All</button>
     </div>
   );
 };

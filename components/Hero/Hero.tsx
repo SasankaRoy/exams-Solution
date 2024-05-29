@@ -4,8 +4,8 @@ export const Hero = () => {
   return (
     <div className="h-[85vh] relative bg-[#000000]/90 overflow-hidden w-full">
       <Image fill src="/heroBg.png" alt="Hero-bg" />
-      <div className="bg-red-200 absolute w-[20%] h-[45%] -left-44 circelBgColor top-5 rounded-full" />
-      <div className="bg-red-200 absolute w-[20%] h-[45%] -right-44 circelBgColor bottom-3 rounded-full" />
+      <div className=" absolute w-[20%] h-[45%] -left-44 circelBgColor top-5 rounded-full" />
+      <div className=" absolute w-[20%] h-[45%] -right-44 circelBgColor bottom-3 rounded-full" />
 
       <div className="w-full absolute h-full flex justify-center items-center top-0 left-0">
         <div className="w-[90%] h-full flex justify-center items-center mx-auto gap-3">
