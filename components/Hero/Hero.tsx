@@ -10,19 +10,19 @@ export const Hero = () => {
       <div className="w-full absolute h-full flex justify-center items-center top-0 left-0">
         <div className="w-[90%] h-full flex justify-center items-center mx-auto gap-3">
           <div className="w-[50%]">
-            <h1 className="text-[#FFF] text-6xl font-[500] font-[Bakbak One] lineHeight">
+            <h1 className="text-[#FFF] text-5xl font-[500] font-[Bakbak One] lineHeight">
               Simplify your exam preparation process with
             </h1>
-            <h2 className="text-6xl font-[500] font-[Bakbak One] textBgColor my-3">
+            <h2 className="text-5xl font-[500] font-[Bakbak One] textBgColor my-3">
               ExamsSolutions.ca.
             </h2>
-            <p className="text-lg font-[Poppins] text-[#FFF] font-[400]">
+            <p className="text-base font-[Poppins] text-[#FFF] font-[400]">
               Explore our past technical exam solutions and enhance your study
               with practice tests. Gain confidence by familiarizing yourself
               with common patterns, formats, and content.
             </p>
 
-            <button className="w-[25%] py-3 my-4 font-[Bakbak One] font-[500] text-lg text-[#FFF] getStartedBtn">
+            <button className="w-[25%] py-3 my-4 font-[Bakbak One] font-[600] text-md text-[#FFF] getStartedBtn">
               Get Started
             </button>
           </div>

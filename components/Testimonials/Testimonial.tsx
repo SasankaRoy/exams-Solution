@@ -30,7 +30,7 @@ export const Testimonial = () => {
             maximus imperdiet.
           </p>
         </div>
-        <div className="flex justify-evenly items-center w-full max-h-[80%]">
+        <div className="flex justify-evenly items-center w-full max-h-[70%]">
           <button className="cursor-pointer z-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"

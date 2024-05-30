@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -135,14 +135,22 @@ body {
   border-image-repeat: round;
 }
 
-
-/* .hideScrollBarTestimonial__SliderWrapper::-webkit-scrollbar {
+.hideScrollBarTestimonial__SliderWrapper::-webkit-scrollbar {
   display: none;
 }
 .hideScrollBarTestimonial__SliderWrapper {
   scrollbar-width: none;
-} */
+}
 
-.mainFooter__BgColor{
-  background: linear-gradient(180deg, #E90029 0%, #9F0000 100%);
+.mainFooter__BgColor {
+  background: linear-gradient(180deg, #e90029 0%, #9f0000 100%);
+}
+.tellUs__Wrapper{
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
+}
+.inputBgColor {
+  background: rgba(255, 255, 255, 0.2);
+}
+.submitBtnBgColor {
+  background: linear-gradient(180deg, #e90029 0%, #9f0000 100%);
 }
