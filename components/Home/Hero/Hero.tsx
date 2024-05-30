@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="h-[85vh] relative bg-[#000000]/90 overflow-hidden w-full">
+    <div className="h-[100vh] relative bg-[#000000]/90 overflow-hidden w-full">
       <Image fill src="/heroBg.png" alt="Hero-bg" />
       <div className=" absolute w-[20%] h-[45%] -left-44 circelBgColor top-5 rounded-full" />
       <div className=" absolute w-[20%] h-[45%] -right-44 circelBgColor bottom-3 rounded-full" />

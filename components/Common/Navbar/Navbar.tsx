@@ -2,10 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { useEffect, useState } from "react";
 
 export const Navbar = () => {
+  const [scrollPositionY, setScrollPositionY] = useState(0);
+
+  useEffect(() => {
+    const scrollhandler = () => {
+      setScrollPositionY(window.scrollY);
+    };
+    window.addEventListener("scroll", scrollhandler);
+    return () => {
+      window.removeEventListener("scroll", scrollhandler);
+    };
+  }, []);
+
   return (
-    <div className="sticky left-0 z-50 top-0 w-full bg-[#000000] py-4">
+    <div className={`fixed left-0 z-50 top-0 w-full ${scrollPositionY >= 5?'bg-[#000000]':'bg-transparent'}  py-4 transition-all duration-300 ease-in-out`}>
       <nav className="flex justify-between items-center  w-[90%] mx-auto">
         <div className="relative h-20 w-36">
           <Image
