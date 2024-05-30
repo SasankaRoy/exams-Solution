@@ -30,14 +30,14 @@ export const Navbar = () => {
         </div>
         <div className="flex justify-center items-center gap-4 w-[50%]">
           <ul className="flex justify-center items-center gap-3">
-            {["Home", "Category", "Shop", "About Us", "Contact Us"].map(
+            {[{title:"Home",path:'/'}, {title:"Category",path:'/category'}, {title:"Shop",path:'/shop'}, {title:"About Us",path:'/about-us'}, {title:"Contact Us",path:'/contact-us'}].map(
               (cur, id) => (
                 <Link
-                  href="/"
+                  href={cur.path}
                   key={id}
                   className="text-white font-[Bakbak One] font-[500] text-lg"
                 >
-                  {cur}
+                  {cur.title}
                 </Link>
               )
             )}
