@@ -5,8 +5,9 @@ import { Hero } from "@/components/Home/Hero/Hero";
 import { Category } from "@/components/Home/Category/Category";
 import { FAQ } from "@/components/Home/FAQ/FAQ";
 import { Testimonial } from "@/components/Home/Testimonials/Testimonial";
-import { MainFooter } from "@/components/Home/Footer/MainFooter";
+// import { MainFooter } from "@/components/Home/Footer/MainFooter";
 import Head from "next/head";
+import { SecondFooter } from "@/components/Common/SecondFooter/SecondFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function Home() {
       <Category />
       <FAQ />
       <Testimonial />
-      <MainFooter />
+      <SecondFooter />
     </>
   );
 }
