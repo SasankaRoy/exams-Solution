@@ -8,7 +8,7 @@ export const FAQ = () => {
       <div className="flex justify-between items-start w-[90%] gap-4 mx-auto">
         <div className="w-[50%] ">
           <div className="w-[60%]">
-            <h2 className="text-[#FFF] Font-[Bakbak One] font-[600] text-3xl">
+            <h2 className="text-[#FFF] Font-[Bakbak One] font-[600] text-5xl">
               Frequently Asked Questions
             </h2>
             <p className="text-[#FFF] text-sm font-[Poppins] font-[400] my-3">
