@@ -1,9 +1,11 @@
-import { ContactDetails } from "@/components/Category/ContactForm/ContactDetails";
-import { FormContainer } from "@/components/Category/ContactForm/FormContainer";
-import { Hero } from "@/components/Category/Hero/Hero";
+import { ContactDetails } from "@/components/Contact/ContactForm/ContactDetails";
+import { FormContainer } from "@/components/Contact/ContactForm/FormContainer";
+import { Hero } from "@/components/Contact/Hero/Hero";
 import { Navbar } from "@/components/Common/Navbar/Navbar";
+import { SecondFooter } from "@/components/Common/SecondFooter/SecondFooter";
 import Head from "next/head";
 import React from "react";
+import { FAQ } from "@/components/Contact/FAQ/FAQ";
 
 const Contactus = () => {
   return (
@@ -19,6 +21,8 @@ const Contactus = () => {
           <ContactDetails />
         </div>
       </div>
+      <FAQ />
+      <SecondFooter />
     </>
   );
 };
