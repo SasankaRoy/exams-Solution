@@ -6,7 +6,7 @@ export const FormContainer = () => {
           Let’s get in touch
         </h2>
 
-        <div className=" w-[70%] ">
+        <div className=" w-[80%] ">
           <h3 className="text-base font-[Poppins] font-[600] text-[#FFF] my-2">
             Send a Message
           </h3>
@@ -15,28 +15,30 @@ export const FormContainer = () => {
             pretium ut lacinia in, elementum id enim. Done
           </p>
         </div>
-        <div className="flex justify-start items-start flex-col gap-4 my-4 w-[70%] ">
+        <div className="flex justify-start items-start flex-col gap-4 my-4 w-[80%] ">
           <div className="flex justify-center items-center gap-3 w-full">
             <div className="w-full">
-              <input className="inputBgColor w-full px-4 text-sm py-2 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Name..." />
-            </div>
+              <input className="inputBgColor w-full px-4 text-sm py-3 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Name..." />
+            </div> 
             <div className="w-full">
-              <input className="inputBgColor w-full px-4 text-sm py-2 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Email ID..." />
+              <input className="inputBgColor w-full px-4 text-sm py-3 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Email ID..." />
             </div>
           </div>
 
           <div className="flex justify-center items-center gap-3 w-full">
             <div className="w-full">
-              <input className="inputBgColor w-full px-4 text-sm py-2 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Phone Number..." />
+              <input className="inputBgColor w-full px-4 text-sm py-3 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Phone Number..." />
             </div>
             <div className="w-full">
-              <input className="inputBgColor w-full px-4 text-sm py-2 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Subject..." />
+              <input className="inputBgColor w-full px-4 text-sm py-3 rounded-md font-[Poppins] font-[400] border-none outline-none" type="text" placeholder="Subject..." />
             </div>
           </div>
 
           <div className="w-full">
-            <textarea className="inputBgColor w-full px-4 text-sm py-2 rounded-md font-[Poppins] font-[400] border-none outline-none" placeholder="Message..." rows={5} name="message" id=""></textarea>
+            <textarea className="inputBgColor w-full px-4 text-sm py-3 rounded-md font-[Poppins] font-[400] border-none outline-none" placeholder="Message..." rows={5} name="message" id=""></textarea>
           </div>
+
+          <button className="text-[#FFF] font-[Bakbak One] font-[600] submitBtnBgColor w-[25%] py-2 rounded-full">Submit</button>
         </div>
       </div>
     </div>
