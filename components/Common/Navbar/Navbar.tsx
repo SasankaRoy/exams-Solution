@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {motion} from 'framer-motion'
 
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [scrollPositionY, setScrollPositionY] = useState(0);
@@ -18,7 +19,16 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <div className={`fixed left-0 z-50 top-0 w-full ${scrollPositionY >= 5?'bg-[#000000]':'bg-transparent'}  py-4 transition-all duration-300 ease-in-out`}>
+    <motion.div initial={{
+      opacity: 0,
+      y: -100
+    }} whileInView={{
+      opacity:1,
+      y:0
+    }} transition={{
+      duration: 0.15,
+      ease: 'backInOut'
+    }} className={`fixed left-0 z-50 top-0 w-full ${scrollPositionY >= 5?'bg-[#000000]':'bg-transparent'}  py-4 transition-all duration-300 ease-in-out`}>
       <nav className="flex justify-between items-center  w-[90%] mx-auto">
         <div className="relative h-20 w-36">
           <Image
@@ -85,6 +95,6 @@ export const Navbar = () => {
           </button>
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 };

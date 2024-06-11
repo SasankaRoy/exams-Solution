@@ -1,17 +1,17 @@
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "framer-motion";
 export const Category = () => {
   return (
-    <div className="h-[125vh] flex flex-col justify-evenly items-center w-full relative bg-[#1C1C1C]">
-      <div className="w-full flex justify-center items-center flex-col gap-4 py-3">
+    <div className="h-[125vh] overflow-y-hidden flex flex-col justify-evenly items-center w-full relative bg-[#1C1C1C]">
+      <motion.div initial={{y:-50,opacity:0}} whileInView={{y:0,opacity:[0,1]}} transition={{duration:1,delay:.2,ease:'backIn'}} className="w-full flex justify-center items-center flex-col gap-4 py-3">
         <h2 className="text-[#FFF] font-[Bakbak One] font-[600] text-5xl">
           Category
         </h2>
         <p className="font-[Poppins] font-[400] text-[#FFF] text-md">
           List of all the exam solutions available for you to access
         </p>
-      </div>
+      </motion.div>
       <img
         src="/categoryBg1.png"
         className="absolute top-0 left-0 h-full"
@@ -24,10 +24,15 @@ export const Category = () => {
       />
 
       <div className="relative top-0 left-0 w-full h-[70%] ">
-        <div className="absolute w-[30%] h-[35%] top-[30%] left-[37%] circelBgColor  rounded-full" />
+        <motion.div
+          initial={{ scale: 0.3, opacity: 0.1, rotate: "0deg" }}
+          whileInView={{ scale: 1, opacity: 0.5, rotate: "360deg" }}
+          transition={{ duration: 0.5, ease: "backInOut", delay: 0.2 }}
+          className="absolute w-[30%] h-[35%] top-[30%] left-[37%] circelBgColor  rounded-full"
+        />
         <div className="absolute w-full h-full top-0 left-0">
           <div className="w-[90%] h-full grid grid-cols-4 gap-5 mx-auto">
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:-300}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -61,9 +66,9 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:-500}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -97,9 +102,9 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:-500}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -133,9 +138,9 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:-500}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -169,9 +174,9 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:500}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -205,9 +210,9 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:500}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -241,9 +246,9 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:500}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -277,9 +282,9 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="overflow-hidden rounded-xl">
+            <motion.div initial={{x:300}} whileInView={{x:0}} transition={{duration:1.2,ease:'backInOut'}} className="overflow-hidden rounded-xl">
               <div className="borderBgColor  w-full h-full flex flex-col justify-evenly items-center">
                 <div className="w-[90%] h-[60%] relative  mx-auto ">
                   <Image
@@ -313,12 +318,14 @@ export const Category = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
 
-      <button className="getStartedBtn w-[8%] mt-3 text-[#FFF] font-[Bakbak One] font-[500] py-2 text-lg">View All</button>
+      <button className="getStartedBtn w-[8%] mt-3 text-[#FFF] font-[Bakbak One] font-[500] py-2 text-lg">
+        View All
+      </button>
     </div>
   );
 };
