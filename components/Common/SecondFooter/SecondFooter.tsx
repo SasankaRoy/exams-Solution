@@ -1,15 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import FooterBg from '../../../assets/FooterBg.png'
 
 export const SecondFooter = () => {
   return (
     <div className="h-[40vh] relative bg-[#1C1C1C]">
       <Image
         fill
-        src="/FooterBg2.png"
+        src={FooterBg}
         className="opacity-15"
         alt="secondfooter-bg"
+        loading="lazy"
       />
       <div className="w-full h-full absolute z-10">
         <div className="w-[90%] h-full mx-auto flex flex-col justify-end items-center">
