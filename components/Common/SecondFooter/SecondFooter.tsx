@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import FooterBg from '../../../assets/FooterBg.png'
+import FooterBg from "../../../assets/FooterBg.png";
 
 export const SecondFooter = () => {
   return (
@@ -26,17 +26,21 @@ export const SecondFooter = () => {
           </div>
           <div className="w-[50%] my-2">
             <ul className="flex justify-evenly items-center gap-4 my-2">
-              {["Home", "Category", "Shop", "About Us", "Contact Us"].map(
-                (cur, id) => (
-                  <Link
-                    className="font-[Bakbak One] font-[600] text-md text-[#FFF] "
-                    href="/"
-                    key={id}
-                  >
-                    {cur}
-                  </Link>
-                )
-              )}
+              {[
+                { title: "Home", path: "/" },
+                { title: "Category", path: "/category" },
+                { title: "Shop", path: "/shop" },
+                { title: "About Us", path: "/about-us" },
+                { title: "Contact Us", path: "/contact-us" },
+              ].map((cur, id) => (
+                <Link
+                  className="font-[Bakbak One] font-[600] text-md text-[#FFF] "
+                  href={cur.path}
+                  key={id}
+                >
+                  {cur.title}
+                </Link>
+              ))}
             </ul>
           </div>
           <div className="w-[35%] flex justify-evenly">
