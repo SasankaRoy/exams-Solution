@@ -43,6 +43,9 @@ body {
 /* body {
   background: #1c1c1c;
 } */
+body{
+  background: #1c1c1c;
+}
 
 .searchInputWrapper {
   background: rgba(255, 255, 255, 0.2);
